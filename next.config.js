@@ -4,15 +4,11 @@ const nextConfig = {
     domains: ['images.unsplash.com', 'image.tmdb.org', 'plus.unsplash.com'],
     unoptimized: true,
   },
-  env: {
-    NEXT_PUBLIC_TMDB_BASEURL:
-      process.env.NEXT_PUBLIC_TMDB_BASEURL || 'https://api.themoviedb.org/3',
+  typescript: {
+    ignoreBuildErrors: true, // Ignore TypeScript errors during build
   },
   eslint: {
-    ignoreDuringBuilds: true, // Disable ESLint during builds
-  },
-  typescript: {
-    ignoreBuildErrors: true, // Disable TypeScript checking during builds
+    ignoreDuringBuilds: true, // Ignore ESLint warnings/errors during build
   },
 }
 
