@@ -32,7 +32,7 @@ export const MoviesDetailsContent = ({
             <BlurredImage
               src={getPosterImageURL(movie.poster_path)}
               alt={movie.title}
-              className="h-full w-full rounded-lg object-fill shadow-lg lg:object-cover"
+              className="size-full rounded-lg object-fill shadow-lg lg:object-cover"
               fill
               sizes="(min-width: 1024px) 1024px, 100vw"
               intro

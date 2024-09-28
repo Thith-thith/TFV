@@ -53,7 +53,7 @@ export const List = ({ title, items, itemType = 'movie' }: ListProps) => {
             variants={HIDDEN_TEXT_ARROW_VARIANT}
             className="mt-1 text-base text-cyan-200"
           >
-            <Icons.arrowRight className="ml-1 inline-block h-4 w-4" />
+            <Icons.arrowRight className="ml-1 inline-block size-4" />
           </motion.span>
         </Link>
       </motion.div>

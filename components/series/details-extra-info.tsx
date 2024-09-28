@@ -43,7 +43,7 @@ export const SeriesDetailsExtraInfo = ({
                   <span className="underline underline-offset-4">
                     {info.value}
                   </span>
-                  <Icons.arrowRight className="h-5 w-5 transition-transform group-hover:translate-x-2" />
+                  <Icons.arrowRight className="size-5 transition-transform group-hover:translate-x-2" />
                 </span>
               </Link>
             ) : (

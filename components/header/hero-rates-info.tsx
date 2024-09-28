@@ -33,7 +33,7 @@ export const HeroRatesInfos = ({
       <Badge className="uppercase">{item?.original_language}</Badge>
       <Badge className="uppercase">{item?.adult ? 'NC-17' : 'PG-13'}</Badge>
       <div className="flex items-center text-xs lg:text-base">
-        <Icons.fullStar className="mr-1 h-6 w-6" />
+        <Icons.fullStar className="mr-1 size-6" />
         <p className="font-semibold">{numberRounder(item?.vote_average)}</p>
       </div>
       <p className="text-xs text-popover-foreground lg:text-base">
