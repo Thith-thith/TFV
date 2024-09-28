@@ -42,9 +42,9 @@ export const siteConfig = {
     locale: 'en_US',
     type: 'website',
   },
-  email: 'boogado@yahoo.com',
-  websiteURL: 'https://www.reely.site',
-  twitterTag: '@Sadge1996',
+  email: 'thin.thith762@gmail.com',
+  websiteURL: 'https://tfv-nine.vercel.app/',
+  twitterTag: '@ThithThin',
   image: 'https://thith.vercel.app/me2.png',
   keywords: [
     'TFV',
