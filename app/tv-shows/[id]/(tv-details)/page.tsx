@@ -24,10 +24,7 @@ export async function generateMetadata(
   return {
     title: movieDetails.name,
     description: movieDetails.overview,
-    // metadataBase: new URL(
-    //   `/movies/${id}`,
-    //   process.env.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
-    // ),
+    metadataBase: new URL(`/movies/${id}`, process.env.NEXT_PUBLIC_BASE_URL),
     openGraph: {
       images: [
         ...previousImages,
