@@ -7,6 +7,7 @@ const apiConfig = {
   originalImage: (imgPath: string) =>
     `${IMAGE_CACHE_HOST_URL}/original${imgPath}`,
   w500Image: (imgPath: string) => `${IMAGE_CACHE_HOST_URL}/w500${imgPath}`,
+  basedUrl: process.env.NEXT_PUBLIC_BASE_URL,
 }
 
 // old

@@ -6,6 +6,7 @@ import {
 } from '@/services/movies'
 
 import { PageDetailsProps } from '@/types/page-details'
+import { apiConfig } from '@/lib/tmdbConfig'
 import { getPosterImageURL } from '@/lib/utils'
 import { MoviesDetailsContent } from '@/components/media/details-content'
 import { MovieDetailsHero } from '@/components/media/details-hero'
@@ -24,7 +25,7 @@ export async function generateMetadata(
   return {
     title: movieDetails.title,
     description: movieDetails.overview,
-    metadataBase: new URL(`/movies/${id}`, process.env.NEXT_PUBLIC_BASE_URL),
+    metadataBase: new URL(`/movies/${id}`, apiConfig.basedUrl),
     openGraph: {
       images: [
         ...previousImages,
