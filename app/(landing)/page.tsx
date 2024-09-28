@@ -17,17 +17,17 @@ async function IndexPage() {
   } = await populateHomePageData()
   return (
     <section className="h-full">
-      <Suspense fallback={<FullScreenLoader />}>
+      {/* <Suspense fallback={<FullScreenLoader />}>
         <HeroSlider movies={nowPlayingMovies} />
-      </Suspense>
-      {/* <MoviesIntroSection
+      </Suspense> */}
+      <MoviesIntroSection
         latestTrendingMovies={latestTrendingMovies}
         allTimeTopRatedMovies={allTimeTopRatedMovies}
         popularMovies={popularMovies}
         latestTrendingSeries={latestTrendingSeries}
         popularSeries={popularSeries}
         allTimeTopRatedSeries={allTimeTopRatedSeries}
-      /> */}
+      />
     </section>
   )
 }
