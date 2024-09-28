@@ -13,7 +13,8 @@ export const DetailsCredits = ({ movieCredits }: { movieCredits: Credit }) => {
       <div className="flex flex-wrap items-center gap-4">
         {movieCredits?.cast?.slice(0, 6)?.map((cast) => (
           <Link
-            href={`${SEARCH_ACTOR_GOOGLE}${cast.name}`}
+            // href={`${SEARCH_ACTOR_GOOGLE}${cast.name}`}
+            href="#"
             key={cast.id}
             target="_blank"
             rel="noopener noreferrer"

@@ -32,7 +32,8 @@ export const DetailsExtraInfo = ({
             <p className="text-muted-foreground">{info.name}</p>
             {info.isLink ? (
               <Link
-                href={`${SEARCH_ACTOR_GOOGLE}${info.value}`}
+                // href={`${SEARCH_ACTOR_GOOGLE}${info.value}`}
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group w-fit transition-all ease-in-out hover:text-cyan-200"
