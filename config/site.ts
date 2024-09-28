@@ -1,8 +1,9 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: 'Reely',
-  description: 'Reely is a movie and tv show tracker built by Mohamed Gado.',
+  name: 'TFV',
+  description:
+    'TFV is a movie and tv show tracker built by Thith THIN. Based on Mohamed Gado template.',
   mainNav: [
     {
       title: 'Home',
@@ -30,13 +31,12 @@ export const siteConfig = {
       scroll: false,
     },
   ],
-  personalLogo:
-    'https://pbs.twimg.com/profile_images/1446549954231738370/IVkXC16N_400x400.jpg',
+  personalLogo: 'https://thith.vercel.app/me2.png',
   links: {
-    twitter: 'https://twitter.com/Sadge1996',
-    github: 'https://github.com/Vette1123',
-    website: 'https://www.mohamedgado.site/',
-    buyMeACoffee: 'https://buymeacoffee.com/vetteotp',
+    twitter: 'https://twitter.com/ThithThin',
+    github: 'https://github.com/thith-thith',
+    website: 'https://thith.vercel.app/',
+    buyMeACoffee: 'https://pay.ababank.com/UJ55vbWwJ5gGKCte9',
   },
   openGraph: {
     locale: 'en_US',
@@ -45,15 +45,15 @@ export const siteConfig = {
   email: 'boogado@yahoo.com',
   websiteURL: 'https://www.reely.site',
   twitterTag: '@Sadge1996',
-  image:
-    'https://pbs.twimg.com/profile_images/1446549954231738370/IVkXC16N_400x400.jpg',
+  image: 'https://thith.vercel.app/me2.png',
   keywords: [
+    'TFV',
     'Reely',
-    'Reely Site',
-    'Reely Tracker',
+    'TFV Site',
+    'TFV Tracker',
     'Movie Tracker',
     'TV Show Tracker',
-    'Reely Live',
+    'TFV Live',
     'Software Engineer',
     'Frontend Engineer',
     'Web Developer',
@@ -62,8 +62,8 @@ export const siteConfig = {
     'JavaScript',
     'Node.js',
     'Mohamed Gado',
-    'Gado',
-    'Gado Mohamed',
+    'Thith',
+    'Thith THIN',
     'React Developer',
     'React Engineer',
     'React.js',

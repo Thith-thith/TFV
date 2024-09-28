@@ -2,8 +2,8 @@ import { IMAGE_CACHE_HOST_URL } from './constants'
 
 const apiConfig = {
   baseUrl: process.env.NEXT_PUBLIC_TMDB_BASEURL,
-  apiKey: process.env.TMDB_API_KEY,
-  headerKey: process.env.TMDB_HEADER_KEY,
+  apiKey: process.env.NEXT_PUBLIC_TMDB_API_KEY,
+  headerKey: process.env.NEXT_PUBLIC_TMDB_HEADER_KEY,
   originalImage: (imgPath: string) =>
     `${IMAGE_CACHE_HOST_URL}/original${imgPath}`,
   w500Image: (imgPath: string) => `${IMAGE_CACHE_HOST_URL}/w500${imgPath}`,
