@@ -20,14 +20,14 @@ async function IndexPage() {
       <Suspense fallback={<FullScreenLoader />}>
         <HeroSlider movies={nowPlayingMovies} />
       </Suspense>
-      <MoviesIntroSection
+      {/* <MoviesIntroSection
         latestTrendingMovies={latestTrendingMovies}
         allTimeTopRatedMovies={allTimeTopRatedMovies}
         popularMovies={popularMovies}
         latestTrendingSeries={latestTrendingSeries}
         popularSeries={popularSeries}
         allTimeTopRatedSeries={allTimeTopRatedSeries}
-      />
+      /> */}
     </section>
   )
 }
