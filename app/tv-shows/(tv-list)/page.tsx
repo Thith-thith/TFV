@@ -20,6 +20,7 @@ import { MediaContent } from '@/components/media/media-content'
 
 async function TvShows() {
   const series = await getPopularSeries()
+
   return (
     <section className="container h-full py-20 lg:py-36">
       <MediaContent
