@@ -4,17 +4,17 @@ import { Metadata } from 'next'
 import { siteConfig } from '@/config/site'
 import { WatchHistoryContainer } from '@/components/watch-history/watch-history'
 
-export const metadata: Metadata = {
-  title: 'Watch History',
-  description: 'Watch History',
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
-  ), // Correcting the base URL
-  // metadataBase: new URL('/watch-history', process.env.NEXT_PUBLIC_BASE_URL),
-  openGraph: {
-    images: [siteConfig.personalLogo, siteConfig.links.twitter],
-  },
-}
+// export const metadata: Metadata = {
+//   title: 'Watch History',
+//   description: 'Watch History',
+//   metadataBase: new URL(
+//     process.env.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
+//   ), // Correcting the base URL
+//   // metadataBase: new URL('/watch-history', process.env.NEXT_PUBLIC_BASE_URL),
+//   openGraph: {
+//     images: [siteConfig.personalLogo, siteConfig.links.twitter],
+//   },
+// }
 
 function WatchHistory() {
   return (
