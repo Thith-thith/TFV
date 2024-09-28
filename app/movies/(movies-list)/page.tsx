@@ -10,8 +10,9 @@ export const metadata: Metadata = {
   title: 'Movies',
   description: 'Movies List',
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
-  ), // Correcting the base URL
+    '/movies',
+    process.env?.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
+  ),
   openGraph: {
     images: [siteConfig.personalLogo, siteConfig.links.twitter],
   },
