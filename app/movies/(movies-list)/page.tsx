@@ -9,10 +9,10 @@ import { MediaContent } from '@/components/media/media-content'
 export const metadata: Metadata = {
   title: 'Movies',
   description: 'Movies List',
-  metadataBase: new URL(
-    '/movies',
-    process.env?.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
-  ),
+  // metadataBase: new URL(
+  //   '/movies',
+  //   process.env?.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
+  // ),
   openGraph: {
     images: [siteConfig.personalLogo, siteConfig.links.twitter],
   },
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 
 async function Movies() {
   const movies = await getPopularMovies()
+
   return (
     <section className="container h-full py-20 lg:py-36">
       <MediaContent

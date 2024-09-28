@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   title: 'TV Shows',
   description: 'TV Shows List',
 
-  metadataBase: new URL(
-    '/movies',
-    process.env.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
-  ),
+  // metadataBase: new URL(
+  //   '/movies',
+  //   process.env.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
+  // ),
   openGraph: {
     images: [siteConfig.personalLogo, siteConfig.links.twitter],
   },
