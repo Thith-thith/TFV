@@ -9,7 +9,10 @@ import { MediaContent } from '@/components/media/media-content'
 export const metadata: Metadata = {
   title: 'TV Shows',
   description: 'TV Shows List',
-  metadataBase: new URL('/movies', process.env.NEXT_PUBLIC_BASE_URL),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || 'https://api.themoviedb.org/3'
+  ), // Correcting the base URL
+  // metadataBase: new URL('/movies', process.env.NEXT_PUBLIC_BASE_URL),
   openGraph: {
     images: [siteConfig.personalLogo, siteConfig.links.twitter],
   },
